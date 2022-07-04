@@ -1,0 +1,594 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="背景 图文并茂解释开源协定的区别？  ​    LGPL：LGPL是GPL的变种，与GPL不同的是可以私有使用LGPL授权的自由软件，开发出来的新软件可以是私有的而不需要是自由软件。所以任何公司在使用自由软件之前应该保证在LGPL或其它GPL变种的授权下。 ​    Mozilla：代码再修改后，需要使用相同或类似的协议，需要对修改部分通过说明文档。 ​    GPL：可以商业使用，可以分发，可以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一周作业">
+<meta property="og:url" content="http://example.com/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/index.html">
+<meta property="og:site_name" content="5-12 23:30">
+<meta property="og:description" content="背景 图文并茂解释开源协定的区别？  ​    LGPL：LGPL是GPL的变种，与GPL不同的是可以私有使用LGPL授权的自由软件，开发出来的新软件可以是私有的而不需要是自由软件。所以任何公司在使用自由软件之前应该保证在LGPL或其它GPL变种的授权下。 ​    Mozilla：代码再修改后，需要使用相同或类似的协议，需要对修改部分通过说明文档。 ​    GPL：可以商业使用，可以分发，可以">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/1.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/2.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/3.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/4.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/5.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/6.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/7.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/8.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/9.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/10.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/11.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/12.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/13.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/14.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/15.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/16.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/17.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/18.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/19.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/20.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/21.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/22.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/23.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/50.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/51.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/52.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/53.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/54.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/57.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/58.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/59.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/60.jpg">
+<meta property="article:published_time" content="2022-06-03T16:26:59.000Z">
+<meta property="article:modified_time" content="2022-07-04T06:23:02.856Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.jpg">
+  
+  
+  <title>第一周作业 - 5-12 23:30</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="第一周作业">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-06-03 16:26" pubdate>
+        June 3, 2022 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.1k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      18 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">第一周作业</h1>
+            
+            <div class="markdown-body">
+              <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><ol>
+<li><p><strong>图文并茂解释开源协定的区别？</strong></p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.jpg" srcset="/img/loading.gif" lazyload alt="image-屏幕截图"></p>
+<p>​    LGPL：LGPL是GPL的变种，与GPL不同的是可以私有使用LGPL授权的自由软件，开发出来的新软件可以是私有的而不需要是自由软件。所以任何公司在使用自由软件之前应该保证在LGPL或其它GPL变种的授权下。</p>
+<p>​    Mozilla：代码再修改后，需要使用相同或类似的协议，需要对修改部分通过说明文档。</p>
+<p>​    GPL：可以商业使用，可以分发，可以修改，自动获得专利权，也可以私下修改使用，分发时，需要保留相同的协议，必须开源，并记录修改。</p>
+<p>​    BSD：可以自由的使用，修改源代码，也可以将修改后的代码作为开源或者专有软件再发布。可以开源也可以闭源，对修改过得文件不必放置版权说明，不可以用开源代码的作者/机构名字和原来产品的名字。</p>
+<p>​    MIT：不会自动获得专利，有专利的须获得授权。使用时仅需保留原协议声明，没有专利时，是最宽松的协议了。</p>
+<p>​    Apache：该协议和BSD类似，允许代码修改，再发布（作为开源或商业软件）。需要给修改的文件进行说明，必须放置版权说明。</p>
+</li>
+<li><p><strong>安装centos ubuntu系统.</strong></p>
+<p>使用VMware安装centos和ubuntu</p>
+<p>(1).安装centos</p>
+<p>​    1.下载centos镜像（我选择的是centos 8镜像）</p>
+<p>​            镜像地址：阿里云：<a target="_blank" rel="noopener" href="https://mirrors.aliyun.com/centos-vault/">https://mirrors.aliyun.com/centos-vault/</a></p>
+<p>​                   腾讯云：<a target="_blank" rel="noopener" href="https://mirrors.cloud.tencent.com/centos-vault/">https://mirrors.cloud.tencent.com/centos-vault/</a></p>
+<p>​                   清华云：<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/centos-vault/">https://mirrors.tuna.tsinghua.edu.cn/centos-vault/</a></p>
+<p>​    2.打开VMware，创建虚拟机。</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/1.jpg" srcset="/img/loading.gif" lazyload alt="Image-1"></p>
+<p>   ​    3.选择自定义安装</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/2.jpg" srcset="/img/loading.gif" lazyload alt="Image-2"></p>
+<p>​        4.默认选择Workstations 16.x  。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/3.jpg" srcset="/img/loading.gif" lazyload alt="Image-3"></p>
+<p>​        5.选择第三项，稍后添加操作系统映像。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/4.jpg" srcset="/img/loading.gif" lazyload alt="Image-4"></p>
+<p>​        6.操作系统选择Linux，版本选择所需要的操作系统版本（这里我选的是centos 8）。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/5.jpg" srcset="/img/loading.gif" lazyload alt="5"></p>
+<p>​        7.修改虚拟机名称，选择虚拟机安装位置</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/6.jpg" srcset="/img/loading.gif" lazyload alt="6"></p>
+<p>​        8.选择虚拟机处理器，内核参数（建议最小2个内核）。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/7.jpg" srcset="/img/loading.gif" lazyload alt="7"></p>
+<p>​        9.选择虚拟机内存（建议2G内存，否则操作系统有可能安装不上）。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/8.jpg" srcset="/img/loading.gif" lazyload alt="8"></p>
+<p>​        10.选择网络连接类型。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/9.jpg" srcset="/img/loading.gif" lazyload alt="9"></p>
+<p>​        11.接下来默认选择就可以。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/10.jpg" srcset="/img/loading.gif" lazyload alt="10"></p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/11.jpg" srcset="/img/loading.gif" lazyload alt="11"></p>
+<p>​        12.选择创建新虚拟磁盘。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/12.jpg" srcset="/img/loading.gif" lazyload alt="12"></p>
+<p>​        13.根据所需要求选择磁盘大小。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/13.jpg" srcset="/img/loading.gif" lazyload alt="13"></p>
+<p>​        14.磁盘文件名字默认选项即可。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/14.jpg" srcset="/img/loading.gif" lazyload alt="14"></p>
+<p>​        15.打开虚拟机设置</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/15.jpg" srcset="/img/loading.gif" lazyload alt="15"></p>
+<p>​        16.就选择CD/DVD，使用ISO映像文件，添加映像存放位置。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/16.jpg" srcset="/img/loading.gif" lazyload alt="15"></p>
+<p>​    17.开启虚拟机。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/17.jpg" srcset="/img/loading.gif" lazyload alt="17"></p>
+<p>​    18.第一次使用该映像建议选择第二项先自检后安装，之后就可以选第一项直接安装。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/18.jpg" srcset="/img/loading.gif" lazyload alt="18"></p>
+<p>​    </p>
+<p>​        19.选择语言，默认是英语。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/19.jpg" srcset="/img/loading.gif" lazyload alt="19"></p>
+<p>​        20.1是修改时间，时区。2.选择安装内容（建议最小安装）。3.进行磁盘分区。4.启用网络。5.设置root密码。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/20.jpg" srcset="/img/loading.gif" lazyload alt="20"></p>
+<p>​        21.选择第二个，进行自定义分区。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/21.jpg" srcset="/img/loading.gif" lazyload alt="19"></p>
+<p>​            22.根据需求进行磁盘分区</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/22.jpg" srcset="/img/loading.gif" lazyload alt="22"></p>
+<p>​        23.重启，安装成功</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/23.jpg" srcset="/img/loading.gif" lazyload alt="23"></p>
+<p>（2）安装ubuntu</p>
+<p>​    1.下载ubuntu镜像（我选择的是ubuntu 1804镜像）</p>
+<p>​            镜像地址：阿里云：<a target="_blank" rel="noopener" href="https://mirrors.aliyun.com/ubuntu-releases/">https://mirrors.aliyun.com/ubuntu-releases/</a></p>
+<p>​                   腾讯云：<a target="_blank" rel="noopener" href="https://mirrors.cloud.tencent.com/ubuntu-releases/">https://mirrors.cloud.tencent.com/ubuntu-releases/</a></p>
+<p>​                   清华云：<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/</a></p>
+<p>​    2~17.参考centos安装</p>
+<p>​    18.选择语言。<img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/50.jpg" srcset="/img/loading.gif" lazyload alt="50"></p>
+<p>​        19.选择继续。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/51.jpg" srcset="/img/loading.gif" lazyload alt="51"></p>
+<p>​        20.选择语言。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/52.jpg" srcset="/img/loading.gif" lazyload alt="52"></p>
+<p>​        21.修改网络设置。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/53.jpg" srcset="/img/loading.gif" lazyload alt="53"></p>
+<p>​        22.选择第二项进行自定义分区</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/54.jpg" srcset="/img/loading.gif" lazyload alt="54"></p>
+<p>​        23.根据要求进行磁盘分区。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/57.jpg" srcset="/img/loading.gif" lazyload alt="56"></p>
+<p>​        24.添加用户名密码。<img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/58.jpg" srcset="/img/loading.gif" lazyload alt="58"></p>
+<p>​    25.选择是否安装openssh</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/59.jpg" srcset="/img/loading.gif" lazyload alt="59"></p>
+<p>​    26.选择安装包，开始安装。</p>
+<p><img src="https://raw.githubusercontent.com/tcwlwr/tcwlwr.github.io/main/2022/06/03/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/60.jpg" srcset="/img/loading.gif" lazyload alt="59"></p>
+<p> 3.<strong>通过计算机基础和帮助的学习，完成学习ifconfig命令的使用。</strong></p>
+<p>​    ifconfig：用于显示或设置网络设备。</p>
+<p>​            -a：显示所有当前可用的接口，即使关闭。</p>
+<p>​            -s：显示简短的列表。</p>
+<p>​            add：增加ipv6的地址。</p>
+<p>​            del：删除ipv6的地址。</p>
+<p>​            io_addr：设置I/O地址。</p>
+<p>​            netmask：设置子网掩码。</p>
+<p>​            address：分配给这个接口的 ip 地址。</p>
+<p>​            tunnel：建立IPv4与IPv6之间的隧道通信地址。</p>
+<p>​            down 关闭指定的网络设备。</p>
+<p>​            up 启动指定的网络设备。</p>
+<p>​            metric：指定在计算数据包的转送次数</p>
+<p> 4.<strong>总结linux FHS结构</strong>。</p>
+<p>​    /：整个文件系统的根目录。</p>
+<p>​    /boot：引导文件存放目录。</p>
+<p>​    /bin：存放用户使用的基本命令。</p>
+<p>​    /sbin：存放管理类命令。</p>
+<p>​    /lib：存放基本的共享库文件及内核模块文件。</p>
+<p>​    /lib64：存放辅助共享库文件。</p>
+<p>​    /etc：存放配置文件目录。</p>
+<p>​    /home：普通用户的家目录。</p>
+<p>​    /media：移动设备挂载点。</p>
+<p>​    /mnt：临时文件挂载点。</p>
+<p>​    /opt：第三方应用安装位置。</p>
+<p>​    /root：管理员的家目录。</p>
+<p>​    /dev：设备文件存放位置。</p>
+<p>​    /proc：内核与进程信息相关的虚拟文件系统。</p>
+<p>​    /sys：系统上硬件设备相关信息虚拟文件系统。</p>
+<p>​    /usr：存放大部分用户功能和应用。</p>
+<p>​    /var：存放一些经常更改的文件。</p>
+<p>​    /tmp：存放一些临时文件。</p>
+<p>​    </p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/git/">git</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/06/19/%E7%AC%AC%E4%BA%8C%E5%91%A8%E4%BD%9C%E4%B8%9A/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">第二周作业</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/05/15/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
